@@ -17,7 +17,7 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$plot1 <- renderPlot({
-    plot(Landsat7, input$col, col = bw, main="Santa Barbara County Spectral Radiance (watts/(m^2 * sr * µm))", xlab="Albers False Easting Coordinate (m)", ylab = "Albers False Northing Coordinate (m)")
+    plot(Landsat7, input$col, col = bw, main="Santa Barbara County Spectral Radiance (watts/(m^2 * sr * um))", xlab="Albers False Easting Coordinate (m)", ylab = "Albers False Northing Coordinate (m)")
   })
 }
 

@@ -8,7 +8,10 @@
 
 
 # run this first to connect to shinyapps.io account
-library(rsconnect)
+rsconnect::setAccountInfo(name='mwright',
+                          token='FE72305423A4AAC8C3B189029D5E6F73',
+                          secret='iogeSSoDkvNOu8TgzmIQ0+LaoeceaCEH+Sd+eYpi')
+
 rsconnect::setAccountInfo(name='mwright',
                           token='FE72305423A4AAC8C3B189029D5E6F73',
                           secret='iogeSSoDkvNOu8TgzmIQ0+LaoeceaCEH+Sd+eYpi')
@@ -18,15 +21,17 @@ rsconnect::deployApp("C:/Users/melai/Documents/BrenSpring2017/ESM262/HW6/ShinyAp
 
 
 
+remove.packages("rgdal")
+install.packages("rgdal", dependencies = TRUE)
+
+install.packages("rgdal", repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com"))
 
 
+remove.packages("shiny")
+install.packages("shiny", dependencies = TRUE)
 
-
-
-
-
-
-
+remove.packages("raster")
+install.packages("raster", dependencies =TRUE)
 
 
 
