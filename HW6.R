@@ -31,7 +31,7 @@ remove.packages("shiny")
 install.packages("shiny", dependencies = TRUE)
 
 remove.packages("raster")
-install.packages("raster", dependencies =TRUE)
+install.packages("raster")
 
 
 
